@@ -10,10 +10,31 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.homepage}>
       <Head>
-        <title>Kindergarten</title>
+        <title>Kinderzgarten</title>
       </Head>
+
+      {/* Começo header section */}
+      <header>
+        <a href="#" className="logo">
+          <i className="fas fa-child" />
+          kidzies
+        </a>
+
+        <div id="menu-bars" className="fas fa-bars" />
+
+        <nav className="navbar">
+          <a href="#home">home</a>
+          <a href="#features">features</a>
+          <a href="#about">about</a>
+          <a href="#services">services</a>
+          <a href="#teacher">teacher</a>
+          <a href="#pricing">pricing</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </header>
+      {/* Fim header section */}
 
       {/* Começo footer section */}
       <div className={styles.footer}>
@@ -23,8 +44,8 @@ export default function Home() {
           todos os direitos reservados.
         </h1>
         </div>
-        {/* Fim footer section */}
       </div>
+      {/* Fim footer section */}
     </div>
   )
 }
