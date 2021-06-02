@@ -1,13 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import Head from 'next/head';
 // import { FaHamburger } from 'react-icons/fa';
 
 import styles from './home.module.scss';
 
 export default function Home() {
+  const [
+    clipPathStyle,
+    setClipPathStyle
+  ] = useState('polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+
   useEffect(() => {
     console.log('Made by Guilherme Bafica')
   }, []);
+
+  const handleToggleNavbars = useCallback(() => {
+    const menu = document.querySelector('#menu-bars');
+
+    if (clipPathStyle === 'polygon(0 0, 100% 0, 100% 100%, 0 100%)') {
+      setClipPathStyle('polygon(0 0, 100% 0, 100% 0, 0 0)');
+
+      menu.classList.toggle('fa-bars');
+    } else {
+      setClipPathStyle('polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+
+      menu.classList.toggle('fa-times');
+    }
+  }, [clipPathStyle])
 
   return (
     <div className={styles.homepage}>
@@ -22,11 +41,14 @@ export default function Home() {
           kidzies
         </a>
 
-        <div className={styles.menuBars}>
+        <div className={styles.menuBars} onClick={handleToggleNavbars}>
           <div id="menu-bars" className="fas fa-bars" />
         </div>
 
-        <nav className={styles.navbar}>
+        <nav
+          className={styles.navbar}
+          style={{ clipPath: clipPathStyle }}
+        >
           <a href="#home">home</a>
           <a href="#features">features</a>
           <a href="#about">about</a>
