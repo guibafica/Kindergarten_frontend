@@ -1,9 +1,10 @@
 :root {
-  --blue:#95d7fe;
+  --red:#f53b57;
 }
 
 * {
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  font-family: cursive;
   margin: 0; 
   padding: 0;
   box-sizing: border-box;
@@ -15,13 +16,14 @@
 }
 
 *::selection {
-  background: var(--blue);
+  background: var(--red);
   color: #fff;
 }
 
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -38,26 +40,12 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: var(--red);
 }
 
 section {
   min-height: 100vh;
-  padding: 1rem 10%;
-  padding-top: 8.5rem;
-}
-
-button {
-  font-size: 1.7rem;
-  padding: 0.7rem 4rem;
-  border-radius: 5rem;
-  margin-top: 1rem;
-  background: none;
-  color: #333;
-  cursor: pointer;
-  border: 0.2rem solid var(--blue);
-
-  &:hover {
-    background: var(--blue);
-  }
+  padding:0 7%;
+  padding-top: 11rem;
+  padding-bottom: 9rem;
 }

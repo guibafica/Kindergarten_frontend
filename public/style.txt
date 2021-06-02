@@ -79,49 +79,17 @@ section{
   font-size: 3.5rem;
 }
 
-header{
-  position: fixed;
-  top:0; left: 0; right: 0;
-  background:url(../images/header-bg.png) no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  z-index: 10000;
-  padding:1.5rem 7%;
-  padding-bottom: 6rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-header .logo{
-  font-size: 2.5rem;
-  color:#333;
-}
 
-header .logo i{
-  padding-right: .5rem;
-  color:var(--red);
-}
 
-header .navbar a{
-  font-size: 2rem;
-  margin-left: 2rem;
-  color:#333;
-}
 
-header .navbar a:hover{
-  color:var(--red);
-}
 
-#menu-bars{
-  font-size: 3rem;
-  border:.1rem solid #333;
-  color:#333;
-  padding:.5rem 1.5rem;
-  cursor: pointer;
-  border-radius: .5rem;
-  display: none;
-}
+
+
+
+
+
+
 
 .home{
   display: flex;
@@ -551,31 +519,13 @@ header .navbar a:hover{
 
 @media (max-width:768px){
 
-  #menu-bars{
-    display: block;
-  }
+ 
 
-  header .navbar{
-    position: absolute;
-    top:70%; left: 0; right: 0;
-    height: calc(100vh - 70%);
-    border-top: .2rem solid #333;
-    background:url(../images/card-bg1.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
 
   header .navbar.nav-toggle{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  header .navbar a{
-    font-size: 2.5rem;
-    margin:2rem 0;
-    display: block;
-    text-align: center;
-  }
 
   .home .image img{
     display: none;

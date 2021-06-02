@@ -1,133 +1,93 @@
 // // Começo header section and responsiveness
 .homepage {
-  h1, h3 {
-    font-family: 'Oswald', sans-serif;
-  }
+  // h1, h3 {
+  //   font-family: 'Oswald', sans-serif;
+  // }
 
-  @media (max-width: 768px) {
-    .menuBar {
-      display: block;
-    }
-  
-    .navbarClosed {
-      position: fixed;
-      top: 8rem; 
-      left: 0;
-      width: 100%;
-      background: var(--blue);
-      border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
-      transform: scaleY(0);
-      transform-origin: top;
-      opacity: 0;
+  header {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    background: url(../../public/images/header-bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10000;
+    padding: 1.5rem 7%;
+    padding-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-      ul {
-        flex-flow: column;
-        padding: 2rem;
-      }
+    .logo {
+      font-size: 2.5rem;
+      color:#333;
 
-      li {
-        margin: 1.5rem;
-        width: 100%;
-      }
-
-      .active {
-        color: #333;
-        border-color: #333;
-      }
-
-      a {
-        display: block;
-        color: #fff;
-        padding-left: 2rem;
-        border-left: 0.2rem solid #fff;
-        font-size: 2rem;
-
-        &:hover {
-          color: #333;
-          border-color: #333;
-        }
+      svg {
+        padding-right: 0.5rem;
+        color: var(--red);
       }
     }
 
-    .navbarOpened {
-      position: fixed;
-      top: 8rem; 
-      left: 0;
-      width: 100%;
-      background: var(--blue);
-      border-top: 0.2rem solid rgba(0, 0, 0, 0.1);
-      transform: scaleY(1);
-      transform-origin: top;
-      opacity: 1;
+    .navbar a {
+      font-size: 2rem;
+      margin-left: 2rem;
+      color: #333;
 
-      ul {
-        flex-flow: column;
-        padding: 2rem;
-        list-style: none;
-      }
-
-      li {
-        margin: 1.5rem;
-        width: 100%;
-      }
-
-      .active {
-        color: #333;
-        border-color: #333;
-      }
-
-      a {
-        display: block;
-        color: #fff;
-        padding-left: 2rem;
-        border-left: 0.2rem solid #fff;
-        font-size: 2rem;
-
-        &:hover {
-          color: #333;
-          border-color: #333;
-        }
+      &:hover{
+        color: var(--red);
       }
     }
 
-    .home .content {
-      text-align: center;
-
-      h3 {
-        font-size: 4.5rem;
-      }
-    }
-  
-    .order .row .image {
+    .menuBars {
+      font-size: 3rem;
+      border: 0.1rem solid #333;
+      color: #333;
+      padding: 0.5rem 1.5rem;
+      cursor: pointer;
+      border-radius: 0.5rem;
       display: none;
     }
   }
 
-  @media (max-width: 991px) {
-    html {
-      font-size: 55%;
+  @media (max-width: 1200px) {
+    header {
+      padding: 1.5rem 3%;
+      padding-bottom: 6rem;
     }
+  }
 
-    .home {
-      &::before,
-      &::after {
-        display: none;
+  @media (max-width: 768px) {
+    header {
+      .menuBars {
+        display: block;
+      }
+
+      .navbar {
+        position: absolute;
+        top: 70%; 
+        left: 0; 
+        right: 0;
+        height: calc(100vh - 70%);
+        border-top: 0.2rem solid #333;
+        background: url(../../public/images/card-bg1.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        // clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        a {
+          font-size: 2.5rem;
+          margin: 2rem 0;
+          display: block;
+          text-align: center;
+        }
       }
     }
   }
 
-  @media (max-width: 500px) {
-    .homepage {
-      html {
-        font-size: 50%;
-      }
+  @media (max-width: 991px) {}
 
-      section {
-        padding: 1rem 5%;
-        padding-top: 8.5rem;
-      }
-    }
-  }
+  @media (max-width: 500px) {}
 }
 // // Fim header section and responsiveness
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,7 +118,7 @@
 
         svg {
           padding-right: 0.2rem;
-          color: var(--blue);
+          color: var(--red);
         }
       }
 
@@ -169,12 +129,12 @@
         display: block;
 
         &:hover {
-          color: var(--blue);
+          color: var(--red);
         }
 
         svg {
           padding-right: 0.2rem;
-          color: var(--blue);
+          color: var(--red);
         }
       }
     }
@@ -190,7 +150,7 @@
     color: #fff;
 
     a {
-      color: var(--blue);
+      color: var(--red);
     }
   }
 }

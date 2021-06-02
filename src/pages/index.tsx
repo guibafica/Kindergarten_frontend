@@ -17,14 +17,16 @@ export default function Home() {
 
       {/* Começo header section */}
       <header>
-        <a href="#" className="logo">
+        <a href="#" className={styles.logo}>
           <i className="fas fa-child" />
           kidzies
         </a>
 
-        <div id="menu-bars" className="fas fa-bars" />
+        <div className={styles.menuBars}>
+          <div id="menu-bars" className="fas fa-bars" />
+        </div>
 
-        <nav className="navbar">
+        <nav className={styles.navbar}>
           <a href="#home">home</a>
           <a href="#features">features</a>
           <a href="#about">about</a>
@@ -37,14 +39,14 @@ export default function Home() {
       {/* Fim header section */}
 
       {/* Começo footer section */}
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>
           <h1 className={styles.credit}>
             Feito por <a href="https://guilherme-bafica.vercel.app/">Guilherme Bafica</a>.
           todos os direitos reservados.
         </h1>
         </div>
-      </div>
+      </div> */}
       {/* Fim footer section */}
     </div>
   )
