@@ -5,10 +5,7 @@ import Head from 'next/head';
 import styles from './home.module.scss';
 
 export default function Home() {
-  const [
-    clipPathStyle,
-    setClipPathStyle
-  ] = useState('polygon(0 0, 100% 0, 100% 100%, 0 100%)');
+  const [clipPathStyle, setClipPathStyle] = useState('polygon(0 0, 100% 0, 100% 100%, 0 100%)');
 
   useEffect(() => {
     console.log('Made by Guilherme Bafica')
