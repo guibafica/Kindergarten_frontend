@@ -1,9 +1,5 @@
 // // Começo header section and responsiveness
 .homepage {
-  // h1, h3 {
-  //   font-family: 'Oswald', sans-serif;
-  // }
-
   header {
     position: fixed;
     top: 0; 
@@ -113,12 +109,40 @@
         }
       }
     }
+
+    .features {
+      flex-flow: column;
+
+      .stick {
+        display: none;
+      }
+    }
   }
 
-  @media (max-width: 450px) {}
+  @media (max-width: 450px) {
+    .features {
+      .boxContainer {
+        text-align: center;
+
+        &:first-child {
+          text-align: center;
+
+          .box {
+            flex-flow: column;
+          }
+        }
+
+        .box {
+          flex-flow: column;
+        }
+      }
+    }
+  }
 }
 // // Fim header section and responsiveness
+
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Começo home section 
 .home {
   display: flex;
@@ -170,7 +194,83 @@
   }
 }
 // Fim home section 
+
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Começo features section 
+.features {
+  display: flex;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &::before {
+    background:url(../../public/images/img-top.png) no-repeat;
+    top: -6rem;
+  }
+
+  &::after {
+    background:url(../../public/images/img-down.png) no-repeat;
+    bottom: -6rem;
+  }
+
+  .stick {
+    padding: 0 2rem;
+  }
+
+  .boxContainer {
+    &:first-child {
+      text-align: right;
+
+      .box{
+        flex-flow: row-reverse;
+      }
+    }
+
+    .title {
+      font-size: 3rem;
+      color: var(--red);
+      padding: 2rem;
+    }
+
+    .box {
+      display: flex;
+      align-items: center;
+      padding: 1rem 0;
+
+      img {
+        height: 6rem;
+        width: 6rem;
+        margin: 2.5rem;
+      }
+
+      .info {
+        h3 {
+          font-size: 2.5rem;
+          color: #333;
+        }
+
+        p {
+          font-size: 1.7rem;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+// Fim features section 
+
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Começo footer section 
 .footer {
   background: #282727;

@@ -30,25 +30,11 @@ html{
 
 
 .up-and-down::before,
-.up-and-down::after{
-  content: '';
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 10rem;
-  width:100%;
-  background-size: cover;
-}
+.up-and-down::after
 
-.up-and-down::before{
-  background:url(../images/img-top.png) no-repeat;
-  top:-6rem;
-}
+.up-and-down::
 
-.up-and-down::after{
-  background:url(../images/img-down.png) no-repeat;
-  bottom:-6rem;
-}
+.up-and-down
 
 .heading{
   text-align: center;
@@ -73,50 +59,14 @@ html{
 
 
 
-.features{
-  display: flex;
-  position: relative;
-}
 
-.features .stick{
-  padding:0 2rem;
-}
 
-.features .box-container .title{
-  font-size: 3rem;
-  color:var(--red);
-  padding:2rem;
-}
 
-.features .box-container .box{
-  display: flex;
-  align-items: center;
-  padding:1rem 0;
-}
 
-.features .box-container .box img{
-  height: 6rem;
-  width:6rem;
-  margin:2.5rem;
-}
 
-.features .box-container .box .info h3{
-  font-size: 2.5rem;
-  color:#333;
-}
 
-.features .box-container .box .info p{
-  font-size: 1.7rem;
-  color:#666;
-}
 
-.features .box-container:first-child .box{
-  flex-flow:row-reverse;
-}
 
-.features .box-container:first-child{
-  text-align: right;
-}
 
 .about{
   display: flex;
@@ -474,14 +424,6 @@ html{
 
 
 
-  .features{
-    flex-flow: column;
-  }
-
-  .features .stick{
-    display: none;
-  }
-
   .about .image img{
     display: none;
   }
@@ -497,24 +439,6 @@ html{
   .contact .row{
     flex-flow:column;
     align-items: flex-start;
-  }
-
-}
-
-@media (max-width:450px){
-
-  html{
-    font-size: 50%;
-  }
-
-  .features .box-container,
-  .features .box-container:first-child{
-    text-align: center;
-  }
-
-  .features .box-container .box,
-  .features .box-container:first-child .box{
-    flex-flow: column;
   }
 
 }

@@ -80,6 +80,98 @@ export default function Home() {
       </section>
       {/* Fim home section */}
 
+      {/* Começo features section */}
+      <section className={styles.features} id="features">
+        <div className={styles.boxContainer}>
+          <h3 className={styles.title}>Por que as crianças nos amam</h3>
+
+          <div className={styles.box}>
+            <img src="images/left-icon1.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>Conversas engraçadas</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/left-icon2.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>Mais atividades</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/left-icon3.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>A diversão não para</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <img className={styles.stick} src="images/stick.png" alt="" />
+
+        <div className={styles.boxContainer}>
+          <h3 className={styles.title}>Por que os pais nos escolhem</h3>
+
+          <div className={styles.box}>
+            <img src="images/right-icon1.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>Monitoramento contínuo</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+              </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/right-icon2.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>Professores profissionais</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+                </p>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/right-icon3.png" alt="" />
+
+            <div className={styles.info}>
+              <h3>Programas desenvolvidos</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Exercitationem, dolor!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Fim features section */}
+
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>
@@ -93,4 +185,3 @@ export default function Home() {
     </div>
   )
 }
-
