@@ -607,68 +607,161 @@
 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-// Começo footer section 
-.footer {
-  background: #282727;
-  padding: 1rem 7%;
+// Começo contact section 
+.contact {
+  display: flex;
+  align-items: center;
 
-  .boxContainer {
-    display: flex;
-    flex-wrap: wrap;
+  background: url(../../public/images/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
 
-    .box {
-      flex: 1 1 25rem;
-      margin: 2rem;
-
-      h3 {
-        font-size: 2rem;
-        color: #fff;
-        padding: 1rem 0;
-        font-weight: normal;
-      }
-
-      p {
-        font-size: 1.4rem;
-        color: #eee;
-        padding: 1rem 0;
-
-        svg {
-          padding-right: 0.2rem;
-          color: var(--red);
-        }
-      }
-
-      a {
-        font-size: 1.4rem;
-        color: #eee;
-        padding: 1rem 0;
-        display: block;
-
-        &:hover {
-          color: var(--red);
-        }
-
-        svg {
-          padding-right: 0.2rem;
-          color: var(--red);
-        }
-      }
-    }
-  }
-
-  .credit {
-    font-size: 2rem;
-    text-align: center;
-    border-top: 0.2rem solid rgba(255, 255, 255, 0.7);
-    padding: 2rem 1rem;
-    font-weight: normal;
-    letter-spacing: 0.1rem;
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 3rem;
+    border-radius: 5rem;
+    background: var(--red);
     color: #fff;
+    font-size: 2rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 
-    a {
-      color: var(--red);
+    &:hover {
+      background:#333;
     }
   }
+}
+
+.contact .image img {
+  width: 25vw;
+}
+
+.contact .row {
+  display: flex;
+  align-items: flex-end;
+}
+
+
+.contact .row .contactInfo{
+  padding: 2rem;
+}
+
+.contact .row .contactForm{
+  padding: 2rem;
+}
+
+.contact .row .btn {
+  cursor: pointer;
+}
+
+.contact .row .contactInfo .box {
+  padding: 1rem 0;
+}
+
+.contact .row .contactInfo .box .title {
+  padding: 1rem 0;
+  font-size: 3rem;
+  color: #333;
+}
+
+.contact .row .contactInfo .box p {
+  font-size: 1.7rem;
+  padding: 0.5rem 0;
+  color: #666;
+}
+
+.contact .row .contactInfo .box p i {
+  padding-right: 0.5rem;
+  color: var(--red);
+}
+
+.contact .row .contactInfo .box a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid #333;
+  color: #333;
+  font-size: 1.7rem;
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.contact .row .contactInfo .box a:hover {
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
+}
+
+.contact .row .contactInfo .box form input[type="email"] {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  color: #666;
+  text-transform: none;
+  border-radius: 5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.contact .row .contactForm h3 {
+  font-size: 3rem;
+  color: #333;
+  padding-bottom: 1rem;
+}
+
+.contact .row .contactForm .box {
+  width: 100%;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+  color: #666;
+  margin: 1rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-transform: none;
+}
+
+.contact .row .contactForm .boxMessage {
+  width: 100%;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.7rem;
+  color: #666;
+  margin: 1rem 0;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  text-transform: none;
+  border-radius: 2rem;
+  height: 15rem;
+  resize: none;
+}
+// Fim contact section 
+
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+// Começo footer section 
+.footer{
+  position: relative;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  font-size: 1rem;
+  color:#666;
+}
+
+.footer span{
+  color:var(--red);
+}
+
+.footer::before{
+  content:'';
+  position: absolute;
+  top:-8rem; left: 50%;
+  transform: translateX(-50%);
+  background: url(../../public/images/img-top.png) no-repeat;
+  background-size: cover;
+  height: 8rem;
+  width:100%;
 }
 // Fim footer section 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -352,7 +352,7 @@ export default function Home() {
       {/* Fim teachers section */}
 
       {/* Começo pricing section */}
-      <section className={styles.pricing} id="pricing"> {/* up-down */}
+      <section className={styles.pricing} id="pricing">
         <h1 className={styles.heading}>Nossos planos de preços</h1>
 
         <div className={styles.boxContainer}>
@@ -421,15 +421,73 @@ export default function Home() {
       </section>
       {/* Fim pricing section */}
 
+      {/* Começo contact section */}
+      <section className={styles.contact} id="contact"> {/* background */}
+        <div className={styles.row}>
+          <div className={styles.contactInfo}>
+            <div className={styles.box}>
+              <h3 className={styles.title}>Detalhes de contato</h3>
+
+              <p> <i className="fas fa-map-marker-alt"></i> Salvador, Bahia - 123456. </p>
+              <p> <i className="fas fa-envelope"></i> example@gmail.com </p>
+              <p> <i className="fas fa-phone"></i> +123-456-7890 </p>
+            </div>
+
+            {/* <div className={styles.box}>
+              <h3 className="title">Siga-nos</h3>
+
+              <a href="#" className="fab fa-facebook-f"></a>
+              <a href="#" className="fab fa-twitter"></a>
+              <a href="#" className="fab fa-instagram"></a>
+              <a href="#" className="fab fa-linkedin"></a>
+            </div>
+
+            <div className={styles.box}>
+              <h3 className={styles.title}>Newsletter</h3>
+
+              <form action="">
+                <input type="email" placeholder="Informe seu e-mail" />
+
+                <input type="submit" className={styles.btn} value="Enviar" />
+              </form>
+            </div> */}
+          </div>
+
+          <form action="" className={styles.contactForm}>
+            <h3>Contate-nos</h3>
+
+            <input type="text" placeholder="Nome" className={styles.box} />
+            <input type="email" placeholder="E-mail" className={styles.box} />
+            <input type="number" placeholder="Número" className={styles.box} />
+            <textarea
+              placeholder="Mensagem"
+              className={styles.boxMessage}
+              name=""
+              id=""
+              cols={30}
+              rows={10}
+              draggable={false}
+            />
+
+            <input type="submit" className={styles.btn} value="Enviar mensagem" />
+          </form>
+        </div>
+
+        <div className={styles.image}>
+          <img src="images/contact-img.png" alt="" />
+        </div>
+      </section>
+      {/* Fim contact section */}
+
       {/* Começo footer section */}
-      {/* <div className={styles.footer}>
+      <div className={styles.footer}>
         <div className={styles.boxContainer}>
           <h1 className={styles.credit}>
             Feito por <a href="https://guilherme-bafica.vercel.app/">Guilherme Bafica</a>.
           todos os direitos reservados.
         </h1>
         </div>
-      </div> */}
+      </div>
       {/* Fim footer section */}
     </div>
   )
