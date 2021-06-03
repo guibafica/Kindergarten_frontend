@@ -68,26 +68,9 @@ html{
 
 
 
-.about{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.about .image img{
-  width:45vw;
-}
 
-.about .content h3{
-  font-size: 4rem;
-  color:var(--red);
-}
 
-.about .content p{
-  font-size: 1.7rem;
-  color:#666;
-  padding:1rem 0;
-}
 
 .services{
   position: relative;
@@ -422,15 +405,6 @@ html{
 
  
 
-
-
-  .about .image img{
-    display: none;
-  }
-
-  .about .content{
-    text-align: center;
-  }
 
   .contact .image img{
     display: none;

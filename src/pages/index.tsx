@@ -172,6 +172,33 @@ export default function Home() {
       </section>
       {/* Fim features section */}
 
+      {/* Começo about section */}
+      <section className={styles.about} id="about">
+        <div className={styles.image}>
+          <img src="images/about-img.png" alt="" />
+        </div>
+
+        <div className={styles.content}>
+          <h3>Uma palavra sobre nós</h3>
+
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            nisi quod consequuntur dolor molestiae magnam magni veritatis?
+            Tenetur optio excepturi harum eius quaerat labore cumque dolorem
+            dignissimos alias. Perspiciatis, expedita.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            minima odio est unde nesciunt necessitatibus, fugiat laboriosam
+            quidem magni? Maxime?
+          </p>
+
+          <a href="#" className={styles.btn}>Saiba mais</a>
+        </div>
+      </section>
+      {/* Fim about section */}
+
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>

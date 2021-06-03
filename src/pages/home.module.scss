@@ -117,6 +117,18 @@
         display: none;
       }
     }
+
+    .about {
+      .image {
+        img {
+          display: none;
+        }
+      }
+
+      .content {
+        text-align: center;
+      }
+    }
   }
 
   @media (max-width: 450px) {
@@ -186,7 +198,7 @@
     background: var(--red);
     color: #fff;
     font-size: 2rem;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
 
     &:hover {
       background:#333;
@@ -268,6 +280,53 @@
   }
 }
 // Fim features section 
+
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Começo about section 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../../public/images/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .image {
+    img {
+      width: 45vw;
+    }
+  }
+
+  .content {
+    h3 {
+      font-size: 4rem;
+      color: var(--red);
+    }
+
+    p { 
+      font-size: 1.7rem;
+      color: #666;
+      padding: 1rem 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 3rem;
+      border-radius: 5rem;
+      background: var(--red);
+      color: #fff;
+      font-size: 2rem;
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+  
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+}
+// Fim about section 
 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
