@@ -55,6 +55,12 @@
       padding: 1.5rem 3%;
       padding-bottom: 6rem;
     }
+
+    section {
+      padding: 0 3%;
+      padding-top: 11rem;
+      padding-bottom: 9rem;
+    }
   }
 
   @media (max-width: 768px) {
@@ -81,12 +87,89 @@
           text-align: center;
         }
       }
+
+    }
+
+    .home {
+      .image {
+        img {
+          display: none;
+        }
+      }
+
+      .content {
+        text-align: center;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        h3 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.5rem;
+        }
+      }
     }
   }
 
   @media (max-width: 450px) {}
 }
 // // Fim header section and responsiveness
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// Começo home section 
+.home {
+  display: flex;
+  align-items: center;
+
+  background: url(../../public/images/background.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .content {
+    h1 {
+      font-size: 5rem;
+      color: var(--red);
+    }
+
+    h3 {
+      font-size: 3rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.7rem;
+      color: #666;
+      padding: 1rem 0;
+    }
+  }
+
+  .image {
+    img {
+      width: 36vw;
+      position: relative;
+      top: -9rem;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 3rem;
+    border-radius: 5rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background:#333;
+    }
+  }
+}
+// Fim home section 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Começo footer section 
 .footer {
@@ -153,4 +236,3 @@
 }
 // Fim footer section 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-

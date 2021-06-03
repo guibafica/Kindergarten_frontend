@@ -57,6 +57,29 @@ export default function Home() {
       </header>
       {/* Fim header section */}
 
+      {/* Começo home section */}
+      <section className={styles.home} id="home">
+        <div className={styles.content}>
+          <h1>Bem-vindo a kidzies</h1>
+
+          <h3>construindo uma educação mais divertida.</h3>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            accusamus eum, dolore officiis facilis fugiat sint. Animi unde
+            blanditiis, ab quibusdam illum minus exercitationem dolore expedita
+            asperiores odit, consectetur iusto.
+          </p>
+
+          <a href="#" className={styles.btn}>Saiba mais</a>
+        </div>
+
+        <div className={styles.image}>
+          <img src="images/home-img.png" alt="" />
+        </div>
+      </section>
+      {/* Fim home section */}
+
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>
