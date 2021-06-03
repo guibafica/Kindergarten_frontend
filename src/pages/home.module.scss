@@ -504,6 +504,109 @@
 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+// Começo prices section 
+.pricing {
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10rem;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &::before {
+    background:url(../../public/images/img-top.png) no-repeat;
+    top: -6rem;
+  }
+
+  &::after {
+    background:url(../../public/images/img-down.png) no-repeat;
+    bottom: -6rem;
+  }
+
+  .heading {
+    text-align: center;
+    color: var(--red);
+    padding: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 3rem;
+    border-radius: 5rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 2rem;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background:#333;
+    }
+  }
+
+  .boxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .box {
+      flex: 1 1 35rem;
+      margin: 1rem;
+      padding: 4rem 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      border: 0.1rem solid rgba(0, 0, 0, 0.3);
+      text-align: center;
+      background-size: cover !important;
+      background-position: center !important;
+      position: relative;
+      overflow: hidden;
+
+      h3 {
+        font-size: 4rem;
+        color: #333;
+      }
+
+      .price {
+        font-size: 5.5rem;
+        color: var(--red);
+
+        span {
+          font-size: 2.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        color: #666;
+      }
+
+      .choise{
+        position: absolute;
+        top: 0; 
+        right: -5rem;
+        background: var(--red);
+        color: #fff;
+        font-size: 2rem;
+        padding: 0.6rem 5.5rem;
+        transform: rotate(45deg);
+      }
+    }
+  }
+}
+// Fim prices section 
+
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Começo footer section 
 .footer {
   background: #282727;

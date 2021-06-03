@@ -351,6 +351,76 @@ export default function Home() {
       </section>
       {/* Fim teachers section */}
 
+      {/* Começo pricing section */}
+      <section className={styles.pricing} id="pricing"> {/* up-down */}
+        <h1 className={styles.heading}>Nossos planos de preços</h1>
+
+        <div className={styles.boxContainer}>
+          <div
+            className={styles.box}
+            style={{ background: 'url(images/card-bg1.png) no-repeat' }}
+          >
+            <h3>Semanal</h3>
+
+            <div className={styles.price}>
+              <span>$</span>20
+            </div>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+              magnam rem harum, nostrum facilis labore excepturi dignissimos?
+              Voluptatibus facere beatae quam quasi! Vero fugit molestias
+              officiis quam, corrupti earum aliquid?
+            </p>
+
+            <a href="#" className={styles.btn}>selecionar este plano</a>
+          </div>
+
+          <div
+            className={styles.box}
+            style={{ background: 'url(images/card-bg2.png) no-repeat' }}
+          >
+            <span className={styles.choise}>Melhor <br /> escolha</span>
+
+            <h3>Mensal</h3>
+
+            <div className={styles.price}>
+              <span>$</span>50
+            </div>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+              magnam rem harum, nostrum facilis labore excepturi dignissimos?
+              Voluptatibus facere beatae quam quasi! Vero fugit molestias
+              officiis quam, corrupti earum aliquid?
+            </p>
+
+            <a href="#" className={styles.btn}>Selecionar este plano</a>
+          </div>
+
+          <div
+            className={styles.box}
+            style={{ background: 'url(images/card-bg3.png) no-repeat' }}
+          >
+            <h3>Anual</h3>
+
+            <div className={styles.price}>
+              <span>$</span>250
+            </div>
+
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
+              magnam rem harum, nostrum facilis labore excepturi dignissimos?
+              Voluptatibus facere beatae quam quasi! Vero fugit molestias
+              officiis quam, corrupti earum aliquid?
+            </p>
+
+            <a href="#" className={styles.btn}>selecionar este plano</a>
+          </div>
+        </div>
+      </section>
+      {/* Fim pricing section */}
+
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>

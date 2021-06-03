@@ -4,41 +4,6 @@
 
 
 
-<!-- pricing section starts  -->
-
-<section class="pricing up-and-down" id="pricing">
-
-    <h1 class="heading">our pricing plans</h1>
-
-    <div class="box-container">
-
-        <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
-            <h3>weekly</h3>
-            <div class="price"><span>$</span>20</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem magnam rem harum, nostrum facilis labore excepturi dignissimos? Voluptatibus facere beatae quam quasi! Vero fugit molestias officiis quam, corrupti earum aliquid?</p>
-            <a href="#" class="btn">select plan</a>
-        </div>
-
-        <div class="box" style="background: url(images/card-bg2.png) no-repeat;">
-            <span class="choise">best <br> choise</span>
-            <h3>monthly</h3>
-            <div class="price"><span>$</span>50</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem magnam rem harum, nostrum facilis labore excepturi dignissimos? Voluptatibus facere beatae quam quasi! Vero fugit molestias officiis quam, corrupti earum aliquid?</p>
-            <a href="#" class="btn">select plan</a>
-        </div>
-
-        <div class="box" style="background: url(images/card-bg3.png) no-repeat;">
-            <h3>yearly</h3>
-            <div class="price"><span>$</span>250</div>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem magnam rem harum, nostrum facilis labore excepturi dignissimos? Voluptatibus facere beatae quam quasi! Vero fugit molestias officiis quam, corrupti earum aliquid?</p>
-            <a href="#" class="btn">select plan</a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- pricing section ends -->
 
 <!-- contact section starts  -->
 
