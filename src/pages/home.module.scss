@@ -374,7 +374,7 @@
       flex: 1 1 30rem;
       margin: 1rem;
       border-radius: 1rem;
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
       position: relative;
       cursor: pointer;
 
@@ -420,6 +420,87 @@
   }
 }
 // Fim services section 
+
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Começo teachers section 
+.teacher {
+  // background: url(../../public/images/background.png) no-repeat;
+  // background-size: cover;
+  // background-position: center;
+
+  .heading {
+    text-align: center;
+    color: var(--red);
+    padding: 1rem;
+    font-size: 3.5rem;
+  }
+
+  .boxContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .box {
+      flex: 1 1 27rem;
+      padding: 2rem 3rem;
+      margin: 1rem;
+      box-shadow:  0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+      border: 0.1rem solid rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      text-align: center;
+      background: url(../../public/images/card-bg1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      .share {
+        padding: 1rem 0;
+
+        svg {
+          height: 2.5rem;
+          width: 2.5rem;
+          line-height: 4.5rem;
+          border-radius: 50%;
+          border: 0.1rem solid #333;
+          color: #333;
+          font-size: 1.7rem;
+          margin: 0.2rem;
+
+          &:hover {
+            background: var(--red);
+            color: #fff;
+            border-color: var(--red);
+          }
+        }
+      }
+
+      img { 
+        height: 12rem;
+        width: 12rem;
+        padding: 1rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        color: #333;
+      }
+
+      span {
+        font-size: 1.7rem;
+        color: var(--red);
+      }
+
+      p {
+        color: #666;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+// Fim teachers section 
 
 // // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

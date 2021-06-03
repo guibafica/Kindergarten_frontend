@@ -200,7 +200,7 @@ export default function Home() {
       {/* Fim about section */}
 
       {/* Começo services section */}
-      <section className={styles.services} id="services"> {/* up-and-down */}
+      <section className={styles.services} id="services">
         <h1 className={styles.heading}> O que ensinamos a seus filhos </h1>
 
         <div className={styles.boxContainer}>
@@ -254,6 +254,102 @@ export default function Home() {
         </div>
       </section>
       {/* Fim services section */}
+
+      {/* Começo teachers section */}
+      <section className={styles.teacher} id="teacher">
+        <h1 className={styles.heading}>Nossos incríveis professores</h1>
+
+        <div className={styles.boxContainer}>
+          <div className={styles.box}>
+            <img src="images/teacher-1.png" alt="" />
+
+            <h3>john deo</h3>
+
+            <span>Professor</span>
+
+            <div className={styles.share}>
+              <a href="#" className="fab fa-facebook-f"></a>
+              <a href="#" className="fab fa-twitter"></a>
+              <a href="#" className="fab fa-instagram"></a>
+              <a href="#" className="fab fa-linkedin"></a>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              molestiae ab soluta iste delectus facilis beatae earum reiciendis
+              repellat, consequuntur sequi dolorem error, labore dolores ullam
+              distinctio illo. Voluptas, molestias?
+            </p>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/teacher-2.png" alt="" />
+
+            <h3>john deo</h3>
+
+            <span>Professor</span>
+
+            <div className={styles.share}>
+              <a href="#" className="fab fa-facebook-f"></a>
+              <a href="#" className="fab fa-twitter"></a>
+              <a href="#" className="fab fa-instagram"></a>
+              <a href="#" className="fab fa-linkedin"></a>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              molestiae ab soluta iste delectus facilis beatae earum reiciendis
+              repellat, consequuntur sequi dolorem error, labore dolores ullam
+              distinctio illo. Voluptas, molestias?
+            </p>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/teacher-3.png" alt="" />
+
+            <h3>john deo</h3>
+
+            <span>Professor</span>
+
+            <div className={styles.share}>
+              <a href="#" className="fab fa-facebook-f"></a>
+              <a href="#" className="fab fa-twitter"></a>
+              <a href="#" className="fab fa-instagram"></a>
+              <a href="#" className="fab fa-linkedin"></a>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              molestiae ab soluta iste delectus facilis beatae earum reiciendis
+              repellat, consequuntur sequi dolorem error, labore dolores ullam
+              distinctio illo. Voluptas, molestias?
+            </p>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/teacher-4.png" alt="" />
+
+            <h3>john deo</h3>
+
+            <span>Professor</span>
+
+            <div className={styles.share}>
+              <a href="#" className="fab fa-facebook-f"></a>
+              <a href="#" className="fab fa-twitter"></a>
+              <a href="#" className="fab fa-instagram"></a>
+              <a href="#" className="fab fa-linkedin"></a>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+              molestiae ab soluta iste delectus facilis beatae earum reiciendis
+              repellat, consequuntur sequi dolorem error, labore dolores ullam
+              distinctio illo. Voluptas, molestias?
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* Fim teachers section */}
 
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
