@@ -199,6 +199,62 @@ export default function Home() {
       </section>
       {/* Fim about section */}
 
+      {/* Começo services section */}
+      <section className={styles.services} id="services"> {/* up-and-down */}
+        <h1 className={styles.heading}> O que ensinamos a seus filhos </h1>
+
+        <div className={styles.boxContainer}>
+          <div className={styles.box}>
+            <img src="images/s1.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Ensino de palavras e letras</h3>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/s2.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Argila e artesanato</h3>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/s3.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Aulas de desenho</h3>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/s4.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Aulas de inglês</h3>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/s5.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Playground para crianças</h3>
+            </div>
+          </div>
+
+          <div className={styles.box}>
+            <img src="images/s6.jpg" alt="" />
+
+            <div className={styles.info}>
+              <h3>Eventos esportivos</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Fim services section */}
+
       {/* Começo footer section */}
       {/* <div className={styles.footer}>
         <div className={styles.boxContainer}>
